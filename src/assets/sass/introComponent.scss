@@ -1,0 +1,10 @@
+$intro-background: #800000;
+
+.intro-component {
+	background: $intro-background;
+	color: #fff;
+
+	h1 {
+		text-transform: uppercase;
+	}
+}

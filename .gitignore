@@ -1,0 +1,23 @@
+/node_modules
+/nbproject
+/storage/*
+!/storage/.gitkeep
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+/nbproject/private/
+
+# Eclipse Meta Files
+.buildpath
+.project
+/.settings
+
+composer.lock
+/nbproject
+.phpintel/
+/dist/*
+!/dist/.gitkeep
