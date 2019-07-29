@@ -55,3 +55,25 @@ module.exports = {
 	]
 }
 ```
+
+## webpack-dev-server
+The webpack-dev-server is by default will target your root folder. By this time it was configure in directory ./dist <br >
+Add an index.html file in ./dist directory and link the bundled js file (e.g. app.bundle.js). <br >
+Take note that webpack-dev-server will not generate any file so adding script tags will magically insert the js file to your index.html.
+Please refer to webpack.config.js under devServer options.
+
+```bash
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+	<div id="app">
+		<p>Test page</p>
+		<app-component></app-component>
+	</div>
+	<script type="text/javascript" src="app.bundle.js"></script>
+</body>
+</html>
+```

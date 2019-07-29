@@ -41,10 +41,12 @@ module.exports = {
 			}
 		]
 	},
+	devServer: {
+		contentBase: path.join(__dirname, 'dist')
+	},
 	resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'Classes': path.resolve(__dirname, 'src/class/'),
 			'Root': path.resolve(__dirname),
 			'@': path.resolve(__dirname, 'src/')
     },
