@@ -66,14 +66,14 @@ Please refer to webpack.config.js under devServer options.
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Index Page</title>
+  <title>Index Page</title>
 </head>
 <body>
-	<div id="app">
-		<p>Test page</p>
-		<app-component></app-component>
-	</div>
-	<script type="text/javascript" src="app.bundle.js"></script>
+  <div id="app">
+    <p>Test page</p>
+    <app-component></app-component>
+  </div>
+  <script type="text/javascript" src="app.bundle.js"></script>
 </body>
 </html>
 ```
