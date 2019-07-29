@@ -77,3 +77,8 @@ Please refer to webpack.config.js under devServer options.
 </body>
 </html>
 ```
+
+Webpack in development server
+```bash
+npm run server
+```
