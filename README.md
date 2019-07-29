@@ -24,3 +24,34 @@ Webpack in production
 ```bash
 npm run build
 ```
+
+The output file of css is base on input file of your js (e.g. app.js ).
+Below is the basic configuration of webpack.
+
+```bash
+var path = require('path');
+const Dotenv = require('dotenv-webpack');
+
+module.exports = {
+	context: path.join(__dirname, 'src'),
+	entry: {
+		'app' : './app.js'
+	},
+	output: {
+		path: path.join(__dirname, 'dist'),
+		filename: '[name].bundle.js'
+	},
+	module: {
+	  rules: [
+	    {
+	    	test: /\.js$/,
+	    	exclude: /node_modules/,
+	    	loader: "babel-loader"
+	    }
+	  ]
+	},
+	plugins:[
+		new Dotenv()
+	]
+}
+```
